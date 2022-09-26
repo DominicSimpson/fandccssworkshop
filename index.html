@@ -40,9 +40,18 @@
         max-width: 20rem;
       }
 
-      .stack-lg {
-        margin: 2rem;
+      .stack-sm > * + * {
+        margin-top: 0.5rem;
       }
+
+      .stack-md > * + * {
+        margin-top: 1rem;
+      }
+
+      .stack-lg > * + * {
+        margin-top: 2rem;
+      }
+
     </style>
   </head>
   <body>
@@ -56,9 +65,9 @@
       </p>
     </header>
     <main>
-      <section>
-        <h2 class="first-section">The first section</h2>
-        <p class="first-section">
+      <section class="stack-md">
+        <h2>The first section</h2>
+        <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
           itaque voluptatibus magnam perspiciatis, accusantium atque alias
           cupiditate provident nemo quo placeat incidunt commodi ea aperiam
@@ -66,9 +75,9 @@
         </p>
       </section>
 
-      <section class="contact">
+      <section class="stack-lg">
         <h2>Contact me</h2>
-        <form>
+        <form class="stack-sm">
           <div>
             <label for="name">Name</label>
             <input type="text" id="name" />
