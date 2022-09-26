@@ -8,36 +8,21 @@
     <style>
       * {
         box-sizing: border-box;
+        margin: 0;
       }
+
       label,
-      input,
-      textarea,
-      button {
-        margin-top: 0.5rem;
-        width: 100%;
+      input {
         display: block;
       }
-      body {
-        margin: 0;
-        font-family: system-ui, sans-serif;
-      }
-      header {
-        padding: 1.5rem;
-        background-color: black;
-        color: white;
-        max-width: 60rem;
-      }
-      main {
-        padding: 1.5rem;
-      }
-      .first-section {
-        max-width: 40rem;
-        margin: auto;
-        padding: 10px;
       
+      body {
+        font-family: system-ui, sans-serif;
+        padding: 1.5rem;
       }
-      .contact {
-        max-width: 20rem;
+
+      section {
+        margin: 2rem;
       }
 
       .stack-sm > * + * {
@@ -77,18 +62,19 @@
 
       <section class="stack-lg">
         <h2>Contact me</h2>
-        <form class="stack-sm">
-          <div>
+
+        <form class="stack-md">
+          <div class="stack-sm">
             <label for="name">Name</label>
             <input type="text" id="name" />
           </div>
 
-          <div>
+          <div class="stack-sm">
             <label for="name">Email</label>
             <input type="email" id="email" />
           </div>
 
-          <div>
+          <div class="stack-sm">
             <label for="message">Message</label>
             <textarea id="message"></textarea>
           </div>
